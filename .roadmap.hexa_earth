@@ -1,0 +1,59 @@
+# .roadmap.hexa_earth — repo-overall tracker
+
+> Cross-cutting state: invariant lattice, release cadence, cycle history,
+> deadlines, pointers. Sister of `hexa-energy` under `need-singularity` org.
+
+**Last sync**: 2026-05-06 · **Current release**: v1.0.0 · **Branch**: `main`
+
+---
+
+## §0 Terminal goal — 12-verb Earth substrate (4 그룹 모두 wired)
+
+hexa-earth 도착지 = **12-verb Earth substrate (climate + water + geo + defense) 모두 working spec + 각 그룹 1+ verb wired .hexa**.
+
+DoD:
+1. `climate` 그룹 carbon-budget n=6 fit (IPCC SSP1-2.6 trajectory).
+2. `water` 그룹 desal energy ≤ sopfr=5 kWh/m³ n=6 ratio.
+3. `geo` 그룹 earthquake n=6 magnitude scale wired.
+4. `defense` 그룹 earth-defense + hexa-defense 통합.
+
+## §A.1 Invariant lattice (n=6)
+
+```
+σ(6) · φ(6) = n · τ(6) = J₂ = 24
+   12   ·   2  =  6  ·   4  = 24
+```
+
+| Symbol | Value | Role | Earth projection |
+|--------|-------|------|------------------|
+| σ(6)   | 12    | sigma — cardinality bin | 12-month seasonal cycle / 12 climate zone Köppen |
+| τ(6)   | 4     | tau — state quartet | 4 hydrologic states (precipitation / runoff / infiltration / evaporation) |
+| φ(6)   | 2     | phi — verdict bit | land / ocean |
+| J₂     | 24    | Mathieu / Leech | 24-hour day-night thermal cycle |
+
+## §A.2 Release cadence
+
+| Version | Date | Status | Highlights |
+|---------|------|--------|------------|
+| v1.0.0 | 2026-05-06 | RELEASED | 12 verb 시드 + 4 그룹 표 |
+| v1.1.0 | ~2026-08 (TARGET) | planned | `climate` 그룹 IPCC 6th assessment cross-verify .hexa |
+| v1.2.0 | ~2026-10 | planned | `water` 그룹 desal energy < 3 kWh/m³ n=6 fit |
+| v1.3.0 | ~2026-12 | planned | `geo` 그룹 earthquake magnitude scale n=6 wired |
+| v2.0.0 | ~2027-Q2 | ASPIRATIONAL | `defense` 그룹 earth-defense + hexa-defense 통합 |
+
+## §A.3 Cycle history
+
+- **Cycle 0 (2026-05-06)** — v1.0.0 initial extraction from n6-architecture@c0f1f570. Commit `bacc202`. 12 verb / 4 그룹 cp -R.
+
+## §A.4 Falsifier preregister
+
+- **F-EARTH-1** — carbon-capture 6-stage closed-form, IPCC SSP1-2.6 trajectory fit?
+- **F-EARTH-2** — desal energy = sopfr=5 kWh/m³ 측정 일치 (Israel/Saudi Arabia plant data)?
+- **F-EARTH-3** — earthquake Richter magnitude vs energy 6-decade closed-form (USGS catalog)?
+- **F-EARTH-4** — carbon-budget σ-φ=10 GtCO₂/yr ceiling 측정 일치?
+
+## §A.5 Pending decisions
+
+- climate → water → geo → defense 우선순위 (단기 implementable vs 장기 substrate).
+- hexa-defense → defense substrate 가 dual-use (offensive 잠재) — 명시적 peaceful-only 선언 필요.
+- desalination + desal verb 중복 정리 (둘 다 시드 cp -R, 차후 merge 또는 specialize).
