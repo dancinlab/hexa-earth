@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/environment-thermal/environment-thermal.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: 158d5932fc4fe49112443bbe4ecf19bf -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: environment-thermal

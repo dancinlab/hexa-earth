@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/desal/desal.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: 0bd56c422f9774f4773b0dc9ac31991c -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: desal

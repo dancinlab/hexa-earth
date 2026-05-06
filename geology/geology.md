@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/geology/geology.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: 7af853ebb94b00c9b986e105eb7c1181 -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: geology

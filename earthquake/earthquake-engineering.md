@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/earthquake-engineering/earthquake-engineering.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: df704f5aa7e8e1d2892af45461e33e88 -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: earthquake-engineering

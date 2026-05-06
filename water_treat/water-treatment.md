@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/water-treatment/water-treatment.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: fc1b6644d1da1926896dd30eb34f2588 -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: water-treatment

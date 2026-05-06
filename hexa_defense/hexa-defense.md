@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/infra/hexa-defense/hexa-defense.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: df67cc49d88d417d05991c1336d5bb9f -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: hexa-defense
