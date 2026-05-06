@@ -1,0 +1,44 @@
+#!hexa strict
+// tests/test_selftest.hexa — 12-verb directory presence harness
+//
+// Pass criterion: 12/12 expected verb dirs present in $HEXA_EARTH_ROOT
+// (climate group: 4 + water group: 3 + geo group: 3 + defense group: 2).
+// Cost: $0 (filesystem stat only).
+
+let VERBS: [str] = [
+    // climate group (4)
+    "climate", "carbon_capture", "env_thermal", "env_protect",
+    // water group (3)
+    "desal", "desalination", "water_treat",
+    // geo group (3)
+    "geology", "earthquake", "cartography",
+    // defense group (2)
+    "earth_defense", "hexa_defense",
+]
+
+fn _dir_exists(p: str) -> bool {
+    let r = exec("[ -d \"" + p + "\" ] && echo yes || echo no").trim()
+    return r == "yes"
+}
+
+fn main() {
+    let mut root = env("HEXA_EARTH_ROOT")
+    if root.len() == 0 { root = exec("pwd").trim() }
+
+    let expected = 12
+    let mut found = 0
+    for v in VERBS {
+        if _dir_exists(root + "/" + v) {
+            found = found + 1
+        } else {
+            eprintln("test_selftest: MISSING verb dir: " + v)
+        }
+    }
+
+    if found == expected {
+        println("test_selftest: PASS (" + str(found) + "/" + str(expected) + " verb dirs present)")
+        return
+    }
+    println("test_selftest: FAIL (" + str(found) + "/" + str(expected) + " verb dirs present)")
+    exit(1)
+}

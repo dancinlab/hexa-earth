@@ -1,0 +1,192 @@
+#!hexa strict
+// hexa-earth/cli/hexa-earth.hexa — standalone hexa-earth CLI router (placeholder)
+//
+// 12-verb Earth Substrate (HEXA family) router across 4 groups:
+//   climate group: climate, carbon_capture, env_thermal, env_protect
+//   water group:   desal, desalination, water_treat
+//   geo group:     geology, earthquake, cartography
+//   defense group: earth_defense, hexa_defense
+//
+// Plus utility subcmds:
+//   status      — verb status table (12 verbs across 4 groups)
+//   selftest    — verify 12 verb dirs present
+//   help        — this help
+//   --version   — print version
+//
+// Status: PLACEHOLDER v1.0.0 — spec-first packaging only. Per-verb working
+// .hexa implementations are TBD; this CLI currently routes to verb dir
+// listings (raw#10 honest C3 — no empirical sandbox at v1.0.0).
+//
+// Root resolution: $HEXA_EARTH_ROOT env, else inferred from $0 dirname.
+//
+// Constraints:
+//   raw#9   — hexa-only orchestration
+//   raw#15  — write-confined (audit log only)
+//   raw#10  — honest C3: spec-first, no working pipelines
+
+let VERSION = "1.0.0"
+
+let HOME = env("HOME")
+let HEXA_EARTH_ROOT_ENV = env("HEXA_EARTH_ROOT")
+
+fn hexa_earth_root() -> str {
+    if HEXA_EARTH_ROOT_ENV.len() > 0 { return HEXA_EARTH_ROOT_ENV }
+    let inferred = exec("dirname \"$(dirname \"$0\")\" 2>/dev/null || true").trim()
+    if inferred.len() > 0 { return inferred }
+    return HOME + "/.hexa-earth"  // @allow-devpath
+}
+
+let HE = hexa_earth_root()
+
+// 12 verbs across 4 groups
+let VERBS_CLIMATE: [str] = ["climate", "carbon_capture", "env_thermal", "env_protect"]
+let VERBS_WATER:   [str] = ["desal", "desalination", "water_treat"]
+let VERBS_GEO:     [str] = ["geology", "earthquake", "cartography"]
+let VERBS_DEFENSE: [str] = ["earth_defense", "hexa_defense"]
+
+fn shq(s: str) -> str {
+    return "'" + s.replace("'", "'\\''") + "'"
+}
+
+fn _dir_exists(p: str) -> bool {
+    let r = exec("[ -d " + shq(p) + " ] && echo yes || echo no").trim()
+    return r == "yes"
+}
+
+fn _count_present(verbs: [str]) -> int {
+    let mut n = 0
+    for v in verbs {
+        if _dir_exists(HE + "/" + v) { n = n + 1 }
+    }
+    return n
+}
+
+fn _print_caveats() {
+    println("")
+    println("--- caveats (raw#10 C3) ---")
+    println("  1. v1.0.0 is SPEC-FIRST — verb dirs hold canonical specs extracted")
+    println("     from n6-architecture@c0f1f570 (2026-05-06). Working .hexa CLI")
+    println("     implementations per verb are TBD.")
+    println("  2. safety / civil-engineering verbs are deferred to a future")
+    println("     hexa-safety standalone (peaceful-only scope inherited).")
+    println("  3. defense group is locked to peaceful planetary-defense scope")
+    println("     (asteroid impact mitigation, climate-shield, etc.); no offensive")
+    println("     systems. See upstream n6-architecture proposal docs.")
+    println("  4. Cross-link: hexa-energy is the climate cousin; hexa-bio is")
+    println("     the molecular sister. Lattice claim across all 12 verbs is")
+    println("     hypothesized only — empirical grounding is per-verb future work.")
+}
+
+fn cmd_status() {
+    let nc = _count_present(VERBS_CLIMATE)
+    let nw = _count_present(VERBS_WATER)
+    let ng = _count_present(VERBS_GEO)
+    let nd = _count_present(VERBS_DEFENSE)
+    let total = nc + nw + ng + nd
+
+    println("hexa-earth " + VERSION + " status — 12-verb Earth Substrate (HEXA family)")
+    println("")
+    println("  group     verbs                                                 present")
+    println("  --------- ----------------------------------------------------- -------")
+    println("  climate   climate, carbon_capture, env_thermal, env_protect    " + str(nc) + "/4")
+    println("  water     desal, desalination, water_treat                     " + str(nw) + "/3")
+    println("  geo       geology, earthquake, cartography                     " + str(ng) + "/3")
+    println("  defense   earth_defense, hexa_defense                          " + str(nd) + "/2")
+    println("")
+    println("  total: " + str(total) + "/12 verbs present")
+    println("  verdict: SPEC_FIRST (working .hexa CLI per verb is TBD)")
+    _print_caveats()
+}
+
+fn cmd_selftest() {
+    let total = _count_present(VERBS_CLIMATE) + _count_present(VERBS_WATER) +
+                _count_present(VERBS_GEO) + _count_present(VERBS_DEFENSE)
+    println("hexa-earth selftest — 12-verb directory sweep")
+    println("  found: " + str(total) + "/12 verb dirs")
+    if total == 12 {
+        println("__HEXA_EARTH_SELFTEST__ PASS")
+        return
+    }
+    println("__HEXA_EARTH_SELFTEST__ FAIL (expected 12, got " + str(total) + ")")
+    exit(1)
+}
+
+fn cmd_version() {
+    println("hexa-earth " + VERSION)
+    println("standalone Earth Substrate (HEXA family — extracted from n6-architecture@c0f1f570)")
+    println("license: MIT")
+    println("repo:    https://github.com/need-singularity/hexa-earth")
+}
+
+fn cmd_help() {
+    println("hexa-earth " + VERSION + " — standalone Earth Substrate CLI (placeholder)")
+    println("")
+    println("usage: hexa-earth <subcmd> [flags...]")
+    println("")
+    println("verb groups (12 verbs / 4 groups):")
+    println("  climate group: climate, carbon_capture, env_thermal, env_protect")
+    println("  water group:   desal, desalination, water_treat")
+    println("  geo group:     geology, earthquake, cartography")
+    println("  defense group: earth_defense, hexa_defense  (peaceful-only)")
+    println("")
+    println("utility subcommands:")
+    println("  status          12-verb / 4-group presence table + caveats")
+    println("  selftest        verify 12/12 verb dirs present (sentinel)")
+    println("")
+    println("global flags:")
+    println("  --version       show version")
+    println("  --help, -h      this help")
+    println("")
+    println("env:")
+    println("  HEXA_EARTH_ROOT        override repo root (default: inferred from $0)")
+    println("")
+    println("status: SPEC_FIRST — working per-verb .hexa CLI is TBD.")
+    println("backend dirs: " + HE)
+}
+
+fn main() {
+    let _raw = args()
+    let mut _sidx = -1
+    let mut _i = 0
+    while _i < _raw.len() {
+        if _raw[_i].ends_with(".hexa") { _sidx = _i; break }
+        _i = _i + 1
+    }
+    let mut _user_start = 2
+    if _sidx >= 0 { _user_start = _sidx + 1 }
+
+    let mut a: [str] = ["hexa_earth_cli", "hexa_earth_router"]
+    let mut _ua = _user_start
+    while _ua < _raw.len() {
+        a = a + [_raw[_ua]]
+        _ua = _ua + 1
+    }
+    let n = len(a)
+
+    if n < 3 {
+        cmd_help()
+        return
+    }
+
+    let sub = a[2]
+
+    if sub == "--version" || sub == "-V" || sub == "version" {
+        cmd_version()
+        return
+    }
+
+    if sub == "--help" || sub == "-h" || sub == "help" {
+        cmd_help()
+        return
+    }
+
+    if sub == "status" {
+        cmd_status()
+    } else if sub == "selftest" {
+        cmd_selftest()
+    } else {
+        eprintln("hexa-earth: unknown subcommand '" + sub + "'")
+        eprintln("run 'hexa-earth help' for usage")
+        exit(2)
+    }
+}
