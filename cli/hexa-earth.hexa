@@ -65,13 +65,13 @@ fn _print_caveats() {
     println("")
     println("--- caveats (raw#10 C3) ---")
     println("  1. v1.0.0 is SPEC-FIRST — verb dirs hold canonical specs extracted")
-    println("     from n6-architecture@c0f1f570 (2026-05-06). Working .hexa CLI")
+    println("     from canon@c0f1f570 (2026-05-06). Working .hexa CLI")
     println("     implementations per verb are TBD.")
     println("  2. safety / civil-engineering verbs are deferred to a future")
     println("     hexa-safety standalone (peaceful-only scope inherited).")
     println("  3. defense group is locked to peaceful planetary-defense scope")
     println("     (asteroid impact mitigation, climate-shield, etc.); no offensive")
-    println("     systems. See upstream n6-architecture proposal docs.")
+    println("     systems. See upstream canon proposal docs.")
     println("  4. Cross-link: hexa-energy is the climate cousin; hexa-bio is")
     println("     the molecular sister. Lattice claim across all 12 verbs is")
     println("     hypothesized only — empirical grounding is per-verb future work.")
@@ -113,7 +113,7 @@ fn cmd_selftest() {
 
 fn cmd_version() {
     println("hexa-earth " + VERSION)
-    println("standalone Earth Substrate (HEXA family — extracted from n6-architecture@c0f1f570)")
+    println("standalone Earth Substrate (HEXA family — extracted from canon@c0f1f570)")
     println("license: MIT")
     println("repo:    https://github.com/need-singularity/hexa-earth")
 }

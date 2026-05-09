@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:domains/infra/carbon-capture/carbon-capture.md -->
+<!-- @canonical: canon@d1640e62:domains/infra/carbon-capture/carbon-capture.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: d8fcbf9817cae77a10a4496418e4fd57 -->
 <!-- gold-standard: shared/harness/sample.md -->

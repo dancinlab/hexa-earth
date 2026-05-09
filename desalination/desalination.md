@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:domains/infra/desalination/desalination.md -->
+<!-- @canonical: canon@d1640e62:domains/infra/desalination/desalination.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: 214ce538c285e6dea9a34b9045f86381 -->
 <!-- gold-standard: shared/harness/sample.md -->

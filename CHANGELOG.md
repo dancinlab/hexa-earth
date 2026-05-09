@@ -7,7 +7,7 @@ All notable changes to **hexa-earth** are documented here. Format follows
 
 ### Added
 
-- Initial extraction from `n6-architecture/domains/infra/` at SHA `c0f1f570`.
+- Initial extraction from `canon/domains/infra/` at SHA `c0f1f570`.
 - 12-verb / 4-group Earth substrate:
   - climate group (4): `climate`, `carbon_capture`, `env_thermal`, `env_protect`
   - water group (3): `desal`, `desalination`, `water_treat`

@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:domains/infra/environmental-protection/environmental-protection.md -->
+<!-- @canonical: canon@d1640e62:domains/infra/environmental-protection/environmental-protection.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: 875d5d3db49ade3a8a482bcf52cda745 -->
 <!-- gold-standard: shared/harness/sample.md -->

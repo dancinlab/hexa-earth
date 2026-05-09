@@ -2,7 +2,7 @@
 #
 # Spec: shared/hexa-lang/hexa-toml-spec.json (version 1.0.0)
 # Distribution target: hx install hexa-earth
-# Provenance: extracted 2026-05-06 from n6-architecture/domains/infra/
+# Provenance: extracted 2026-05-06 from canon/domains/infra/
 #             at SHA c0f1f570 (sister to hexa-bio, hexa-energy).
 
 [package]
@@ -55,7 +55,7 @@ hexa-lang = ">=1.0.0"
 verbs_total = 12
 groups_total = 4
 verdict = "SPEC_FIRST"
-extracted_from = "n6-architecture/domains/infra/ @ c0f1f570 (2026-05-06)"
+extracted_from = "canon/domains/infra/ @ c0f1f570 (2026-05-06)"
 
 # ── Scope honesty (raw#10 C3) ─────────────────────────────
 [scope]

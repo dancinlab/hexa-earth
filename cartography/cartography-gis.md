@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:domains/infra/cartography-gis/cartography-gis.md -->
+<!-- @canonical: canon@d1640e62:domains/infra/cartography-gis/cartography-gis.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: aceb97acaa539cac8ed6bebd444b388b -->
 <!-- gold-standard: shared/harness/sample.md -->

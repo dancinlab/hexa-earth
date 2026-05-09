@@ -4,7 +4,7 @@
 **Closure verdict**: **SPEC_FIRST** (12 verb dirs extracted; working `.hexa`
 CLI per verb is TBD)
 **Provenance**: extracted 2026-05-06 from
-`n6-architecture/domains/infra/` at SHA `c0f1f570`. Sister of
+`canon/domains/infra/` at SHA `c0f1f570`. Sister of
 `hexa-bio` (registry L24) and `hexa-energy` (climate cousin).
 
 This is the **initial standalone release** of `hexa-earth`, a 12-verb
@@ -38,7 +38,7 @@ hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
 ## Honest caveats (raw#10 C3)
 
 1. **Spec-first**: verb dirs hold canonical specs from
-   `n6-architecture@c0f1f570`; per-verb working `.hexa` implementations are
+   `canon@c0f1f570`; per-verb working `.hexa` implementations are
    TBD in follow-on cycles.
 2. **Peaceful-only defense scope**: `earth_defense` and `hexa_defense` are
    locked to planetary-defense / civil-resilience use cases (no offensive
@@ -56,4 +56,4 @@ hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
   (Molecular Toolkit, 4 verbs)
 - Climate cousin: [`hexa-energy`](https://github.com/need-singularity/hexa-energy)
   (energy ↔ climate co-design)
-- Upstream: `n6-architecture` (private) @ `c0f1f570`
+- Upstream: `canon` (private) @ `c0f1f570`

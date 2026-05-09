@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:domains/infra/climate/climate.md -->
+<!-- @canonical: canon@d1640e62:domains/infra/climate/climate.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: 0424a804dc66d39fe369285c9cdbaf7f -->
 <!-- gold-standard: shared/harness/sample.md -->

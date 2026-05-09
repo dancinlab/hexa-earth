@@ -2,7 +2,7 @@
 
 > Earth 묶음 — climate + water + geo + defense 12-verb. A standalone
 > packaging of 12 Earth-systems verbs organized into 4 groups, extracted
-> from `n6-architecture/domains/infra/` at SHA `c0f1f570` (2026-05-06).
+> from `canon/domains/infra/` at SHA `c0f1f570` (2026-05-06).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
@@ -44,39 +44,39 @@ preserves verbatim for traceability.
 
 | verb              | upstream source                                                       |
 |-------------------|-----------------------------------------------------------------------|
-| `climate/`        | `n6-architecture/domains/infra/climate/`                              |
-| `carbon_capture/` | `n6-architecture/domains/infra/carbon-capture/`                       |
-| `env_thermal/`    | `n6-architecture/domains/infra/environment-thermal/`                  |
-| `env_protect/`    | `n6-architecture/domains/infra/environmental-protection/`             |
+| `climate/`        | `canon/domains/infra/climate/`                              |
+| `carbon_capture/` | `canon/domains/infra/carbon-capture/`                       |
+| `env_thermal/`    | `canon/domains/infra/environment-thermal/`                  |
+| `env_protect/`    | `canon/domains/infra/environmental-protection/`             |
 
 ### water group (3)
 
 | verb            | upstream source                                                       |
 |-----------------|-----------------------------------------------------------------------|
-| `desal/`        | `n6-architecture/domains/infra/desal/`                                |
-| `desalination/` | `n6-architecture/domains/infra/desalination/`                         |
-| `water_treat/`  | `n6-architecture/domains/infra/water-treatment/`                      |
+| `desal/`        | `canon/domains/infra/desal/`                                |
+| `desalination/` | `canon/domains/infra/desalination/`                         |
+| `water_treat/`  | `canon/domains/infra/water-treatment/`                      |
 
 ### geo group (3)
 
 | verb           | upstream source                                                       |
 |----------------|-----------------------------------------------------------------------|
-| `geology/`     | `n6-architecture/domains/infra/geology/`                              |
-| `earthquake/`  | `n6-architecture/domains/infra/earthquake-engineering/`               |
-| `cartography/` | `n6-architecture/domains/infra/cartography-gis/`                      |
+| `geology/`     | `canon/domains/infra/geology/`                              |
+| `earthquake/`  | `canon/domains/infra/earthquake-engineering/`               |
+| `cartography/` | `canon/domains/infra/cartography-gis/`                      |
 
 ### defense group (2) — peaceful-only
 
 | verb             | upstream source                                                     |
 |------------------|---------------------------------------------------------------------|
-| `earth_defense/` | `n6-architecture/domains/infra/earth-defense/`                      |
-| `hexa_defense/`  | `n6-architecture/domains/infra/hexa-defense/`                       |
+| `earth_defense/` | `canon/domains/infra/earth-defense/`                      |
+| `hexa_defense/`  | `canon/domains/infra/hexa-defense/`                       |
 
 The defense group is **locked to peaceful planetary-defense scope**
 (asteroid impact mitigation, climate-shield, civil resilience). No
 offensive systems. This inherits from the upstream
 `critical-mineral-conflict-arbitration` peaceful-only reframing
-(`n6-architecture` commit `c0f1f570`).
+(`canon` commit `c0f1f570`).
 
 ---
 
@@ -88,7 +88,7 @@ spec-first (작동 .hexa CLI TBD). safety/civil은 후속 standalone
 
 - v1.0.0 ships the **canonical extraction of source specs** — verb dirs
   hold the design / spec / docs trees as they existed in
-  `n6-architecture@c0f1f570`.
+  `canon@c0f1f570`.
 - The CLI (`cli/hexa-earth.hexa`) is a **placeholder router** — it lists
   groups, counts verb dirs, runs a 12/12 sentinel selftest. Per-verb
   working `.hexa` implementations are **TBD** (deferred to follow-on cycles).
@@ -121,7 +121,7 @@ Future: `hx install hexa-earth` once the hexa-lang registry entry lands.
 - **Sister substrates** (HEXA family standalone repos):
   - [`need-singularity/hexa-bio`](https://github.com/need-singularity/hexa-bio) — Molecular Toolkit (4 verbs)
   - [`need-singularity/hexa-energy`](https://github.com/need-singularity/hexa-energy) — climate cousin (energy ↔ climate co-design)
-- **Upstream**: [`n6-architecture`](https://github.com/need-singularity/n6-architecture) (private) at SHA `c0f1f570`
+- **Upstream**: [`canon`](https://github.com/need-singularity/canon) (private) at SHA `c0f1f570`
 - **Future siblings** (candidates): `hexa-safety` (safety + civil-engineering),
   `hexa-econ` (economics + currency + governance)
 
