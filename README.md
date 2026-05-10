@@ -4,6 +4,7 @@
 > packaging of 12 Earth-systems verbs organized into 4 groups, extracted
 > from `canon/domains/infra/` at SHA `c0f1f570` (2026-05-06).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20102604.svg)](https://doi.org/10.5281/zenodo.20102604)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 12 / 4 groups](https://img.shields.io/badge/verbs-12_/_4_groups-blue.svg)](#verbs)
