@@ -18,8 +18,8 @@
 collecting 12 verbs across 4 group axes (climate / water / geo / defense)
 into a single n=6-aligned bundle. It is the sister of:
 
-- [`need-singularity/hexa-bio`](https://github.com/need-singularity/hexa-bio) — molecular toolkit (4 verbs)
-- [`need-singularity/hexa-energy`](https://github.com/need-singularity/hexa-energy) — climate cousin (energy ↔ climate co-design)
+- [`dancinlab/hexa-bio`](https://github.com/dancinlab/hexa-bio) — molecular toolkit (4 verbs)
+- [`dancinlab/hexa-energy`](https://github.com/dancinlab/hexa-energy) — climate cousin (energy ↔ climate co-design)
 
 The 12-verb / 4-group layout encodes the n=6 invariant lattice's
 substrate-level partitioning of Earth-systems concerns:
@@ -104,7 +104,7 @@ This is honest C3 (raw#10): packaging-grade closure, not empirical-grade.
 
 ```bash
 # git clone (works today):
-git clone https://github.com/need-singularity/hexa-earth.git ~/.hexa-earth
+git clone https://github.com/dancinlab/hexa-earth.git ~/.hexa-earth
 export HEXA_EARTH_ROOT=~/.hexa-earth
 export PATH="$HEXA_EARTH_ROOT/cli:$PATH"
 
@@ -120,9 +120,9 @@ Future: `hx install hexa-earth` once the hexa-lang registry entry lands.
 ## Cross-link
 
 - **Sister substrates** (HEXA family standalone repos):
-  - [`need-singularity/hexa-bio`](https://github.com/need-singularity/hexa-bio) — Molecular Toolkit (4 verbs)
-  - [`need-singularity/hexa-energy`](https://github.com/need-singularity/hexa-energy) — climate cousin (energy ↔ climate co-design)
-- **Upstream**: [`canon`](https://github.com/need-singularity/canon) (private) at SHA `c0f1f570`
+  - [`dancinlab/hexa-bio`](https://github.com/dancinlab/hexa-bio) — Molecular Toolkit (4 verbs)
+  - [`dancinlab/hexa-energy`](https://github.com/dancinlab/hexa-energy) — climate cousin (energy ↔ climate co-design)
+- **Upstream**: [`canon`](https://github.com/dancinlab/canon) (private) at SHA `c0f1f570`
 - **Future siblings** (candidates): `hexa-safety` (safety + civil-engineering),
   `hexa-econ` (economics + currency + governance)
 

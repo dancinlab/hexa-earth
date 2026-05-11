@@ -115,7 +115,7 @@ fn cmd_version() {
     println("hexa-earth " + VERSION)
     println("standalone Earth Substrate (HEXA family — extracted from canon@c0f1f570)")
     println("license: MIT")
-    println("repo:    https://github.com/need-singularity/hexa-earth")
+    println("repo:    https://github.com/dancinlab/hexa-earth")
 }
 
 fn cmd_help() {

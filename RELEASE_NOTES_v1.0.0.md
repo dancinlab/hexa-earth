@@ -24,12 +24,12 @@ under the n=6 invariant lattice.
   (`__HEXA_EARTH_SELFTEST__ PASS` sentinel).
 - **MIT license** — permissive distribution.
 - **GitHub-only distribution** — canonical at
-  <https://github.com/need-singularity/hexa-earth>.
+  <https://github.com/dancinlab/hexa-earth>.
 
 ## Quickstart
 
 ```bash
-git clone https://github.com/need-singularity/hexa-earth.git ~/.hexa-earth
+git clone https://github.com/dancinlab/hexa-earth.git ~/.hexa-earth
 export HEXA_EARTH_ROOT=~/.hexa-earth
 hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa selftest
 hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
@@ -52,8 +52,8 @@ hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
 
 ## Cross-link
 
-- Sister: [`hexa-bio`](https://github.com/need-singularity/hexa-bio)
+- Sister: [`hexa-bio`](https://github.com/dancinlab/hexa-bio)
   (Molecular Toolkit, 4 verbs)
-- Climate cousin: [`hexa-energy`](https://github.com/need-singularity/hexa-energy)
+- Climate cousin: [`hexa-energy`](https://github.com/dancinlab/hexa-energy)
   (energy ↔ climate co-design)
 - Upstream: `canon` (private) @ `c0f1f570`

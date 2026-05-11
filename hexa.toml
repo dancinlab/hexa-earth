@@ -12,8 +12,8 @@ entry = "cli/hexa-earth.hexa"
 description = "Earth Substrate (HEXA family): 12-verb integrated bundle across 4 groups — climate (climate, carbon_capture, env_thermal, env_protect) + water (desal, desalination, water_treat) + geo (geology, earthquake, cartography) + defense (earth_defense, hexa_defense). Spec-first; working .hexa CLI TBD. safety/civil verbs are deferred to a future hexa-safety standalone."
 license = "MIT"
 authors = ["박민우 <nerve011235@gmail.com>"]
-repository = "https://github.com/need-singularity/hexa-earth"
-homepage = "https://github.com/need-singularity/hexa-earth"
+repository = "https://github.com/dancinlab/hexa-earth"
+homepage = "https://github.com/dancinlab/hexa-earth"
 readme = "README.md"
 keywords = ["earth-substrate", "hexa-family", "climate", "water", "geo", "defense", "n6-invariant"]
 categories = ["geosciences", "climate-science", "earth-systems", "planetary-defense"]
@@ -64,7 +64,7 @@ not_scope = ["working .hexa CLI implementations (TBD per verb)", "safety/civil v
 
 # ── Cross-link sister substrates ──────────────────────────
 [cross_link]
-sister = ["need-singularity/hexa-bio", "need-singularity/hexa-energy"]
+sister = ["dancinlab/hexa-bio", "dancinlab/hexa-energy"]
 note = "hexa-energy is the climate cousin (energy↔climate co-design); hexa-bio is the molecular sister."
 
 # ── Cost profile ──────────────────────────────────────────
