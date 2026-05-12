@@ -103,17 +103,23 @@ This is honest C3 (raw#10): packaging-grade closure, not empirical-grade.
 ## Install
 
 ```bash
-# git clone (works today):
-git clone https://github.com/dancinlab/hexa-earth.git ~/.hexa-earth
-export HEXA_EARTH_ROOT=~/.hexa-earth
-export PATH="$HEXA_EARTH_ROOT/cli:$PATH"
+# 1. Install hexa-lang (ships `hexa` + `hx` package manager)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dancinlab/hexa-lang/main/install.sh)"
 
-# Run any subcommand:
-hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
-hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa selftest
+# 2. Install hexa-earth
+hx install hexa-earth          # global, pulls latest from registry
 ```
 
-Future: `hx install hexa-earth` once the hexa-lang registry entry lands.
+---
+
+## Run
+
+```bash
+hexa-earth status              # 12-verb / 4-group presence table + caveats
+hexa-earth selftest            # verify 12/12 verb dirs present (sentinel)
+hexa-earth --version           # show version
+hexa-earth --help              # full usage
+```
 
 ---
 
