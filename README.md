@@ -39,48 +39,6 @@ preserves verbatim for traceability.
 
 ---
 
-## Verbs
-
-### climate group (4)
-
-| verb              | upstream source                                                       |
-|-------------------|-----------------------------------------------------------------------|
-| `climate/`        | `canon/domains/infra/climate/`                              |
-| `carbon_capture/` | `canon/domains/infra/carbon-capture/`                       |
-| `env_thermal/`    | `canon/domains/infra/environment-thermal/`                  |
-| `env_protect/`    | `canon/domains/infra/environmental-protection/`             |
-
-### water group (3)
-
-| verb            | upstream source                                                       |
-|-----------------|-----------------------------------------------------------------------|
-| `desal/`        | `canon/domains/infra/desal/`                                |
-| `desalination/` | `canon/domains/infra/desalination/`                         |
-| `water_treat/`  | `canon/domains/infra/water-treatment/`                      |
-
-### geo group (3)
-
-| verb           | upstream source                                                       |
-|----------------|-----------------------------------------------------------------------|
-| `geology/`     | `canon/domains/infra/geology/`                              |
-| `earthquake/`  | `canon/domains/infra/earthquake-engineering/`               |
-| `cartography/` | `canon/domains/infra/cartography-gis/`                      |
-
-### defense group (2) — peaceful-only
-
-| verb             | upstream source                                                     |
-|------------------|---------------------------------------------------------------------|
-| `earth_defense/` | `canon/domains/infra/earth-defense/`                      |
-| `hexa_defense/`  | `canon/domains/infra/hexa-defense/`                       |
-
-The defense group is **locked to peaceful planetary-defense scope**
-(asteroid impact mitigation, climate-shield, civil resilience). No
-offensive systems. This inherits from the upstream
-`critical-mineral-conflict-arbitration` peaceful-only reframing
-(`canon` commit `c0f1f570`).
-
----
-
 ## Status
 
 **12-verb 통합 substrate (4 그룹: climate + water + geo + defense).
