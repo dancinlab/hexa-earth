@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 12 / 4 groups](https://img.shields.io/badge/verbs-12_/_4_groups-blue.svg)](#verbs)
+[![Verify: 4/4 PASS](https://img.shields.io/badge/verify-4%2F4_PASS-brightgreen.svg)](verify/run_all.hexa)
+[![Closure: CLOSED](https://img.shields.io/badge/closure-CLOSED-brightgreen.svg)](hexa.toml)
 [![Status: SPEC_FIRST](https://img.shields.io/badge/status-SPEC__FIRST-orange.svg)](#status)
 
 ---
@@ -78,6 +80,34 @@ hexa-earth selftest            # verify 12/12 verb dirs present (sentinel)
 hexa-earth --version           # show version
 hexa-earth --help              # full usage
 ```
+
+---
+
+## Verify
+
+Sister-substrate `verify/run_all.hexa` aggregator pattern, scaled to
+spec-first 12-verb Earth-substrate scope. From the repo root:
+
+```bash
+hexa run verify/run_all.hexa     # exit 0 = all 4 scripts PASS
+```
+
+| script                            | what it checks                                                                                  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `verify/spec_presence.hexa`       | all 12 verb spec docs present at declared paths (4 groups: climate · water · geo · defense)    |
+| `verify/lattice_arithmetic.hexa`  | n=6 self-consistency (σ=12 verbs · τ=4 groups · σ·φ = n·τ = 24) — *aux only* per LATTICE_POLICY §1.3 |
+| `verify/real_limits_anchor.hexa`  | `LIMIT_BREAKTHROUGH.md` anchors (IPCC AR6 · USGS · NASA-NOAA TSIS-1 · UN-Water · Stefan-Boltzmann · Carnot · Photosynthesis · Shannon) |
+| `verify/closure_consistency.hexa` | scoreboard cross-check (CLI · `hexa.toml` · README · `AGENTS.md`) — 12/12 verbs, 4 groups, SPEC_FIRST verdict preserved |
+
+Per [`LATTICE_POLICY.md`](LATTICE_POLICY.md) §1.3, lattice-arithmetic
+identities are permitted only as auxiliary self-consistency checks;
+the substrate's real verification anchors live in
+[`LIMIT_BREAKTHROUGH.md`](LIMIT_BREAKTHROUGH.md) (L1–L7 HARD/SOFT walls
+sourced from IPCC AR6 attribution, NASA/NOAA TSIS-1 solar constant,
+USGS Mineral Commodity Summaries, UN-Water freshwater availability,
+Elimelech & Phillip 2011 desal SEC, and the Stefan / Boltzmann / Carnot
+/ Shannon canon). Defense entries remain generic per OPSEC (raw#10 C3 —
+no specific weapons-system claims).
 
 ---
 
