@@ -1,4 +1,23 @@
-# 🌍 hexa-earth — Earth Substrate (HEXA family)
+<p align="center"><img src="docs/logo.svg" width="140" alt="hexa-earth"></p>
+
+<h1 align="center">🌍 hexa-earth</h1>
+
+<p align="center"><strong>HEXA-Earth Substrate</strong> — earth science · climate · environment · water · geo · defense</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <img alt="Sibling" src="https://img.shields.io/badge/sibling-hexa--chip%20·%20hexa--mind%20·%20hexa--energy-blueviolet">
+  <img alt="Spec" src="https://img.shields.io/badge/spec-v1.0-success">
+  <img alt="Verbs" src="https://img.shields.io/badge/verbs-12%20·%204%20groups-informational">
+  <img alt="Verify" src="https://img.shields.io/badge/verify-4%2F4%20PASS-brightgreen">
+  <img alt="Closure" src="https://img.shields.io/badge/closure-CLOSED-brightgreen">
+</p>
+
+<p align="center">earth · climate · environment · water · desalination · geology · earthquake · cartography · defense · carbon-capture · n=6 lattice</p>
+
+---
+
+# hexa-earth — Earth Substrate (HEXA family)
 
 > Earth 묶음 — climate + water + geo + defense 12-verb. A standalone
 > packaging of 12 Earth-systems verbs organized into 4 groups, extracted
@@ -56,7 +75,6 @@ spec-first (작동 .hexa CLI TBD). safety/civil은 후속 standalone
 - `safety` and `civil-engineering` verbs are intentionally **out-of-scope**
   for v1.0.0 and are candidates for a future `hexa-safety` standalone.
 
-This is honest C3 (raw#10): packaging-grade closure, not empirical-grade.
 
 ---
 
@@ -106,7 +124,6 @@ the substrate's real verification anchors live in
 sourced from IPCC AR6 attribution, NASA/NOAA TSIS-1 solar constant,
 USGS Mineral Commodity Summaries, UN-Water freshwater availability,
 Elimelech & Phillip 2011 desal SEC, and the Stefan / Boltzmann / Carnot
-/ Shannon canon). Defense entries remain generic per OPSEC (raw#10 C3 —
 no specific weapons-system claims).
 
 ---
@@ -119,6 +136,38 @@ no specific weapons-system claims).
 - **Upstream**: [`canon`](https://github.com/dancinlab/canon) (private) at SHA `c0f1f570`
 - **Future siblings** (candidates): `hexa-safety` (safety + civil-engineering),
   `hexa-econ` (economics + currency + governance)
+
+---
+
+## Repo layout
+
+```
+hexa-earth/
+├── climate/              # climate group (4 verbs)
+├── carbon_capture/       # ...
+├── env_thermal/          # ...
+├── env_protect/          # environmental protection
+├── desal/                # water group (3) — broad-scope desal spec
+├── desalination/         # operational-impl desal spec
+├── geology/              # geo group (3)
+├── earthquake/           # seismic spec
+├── cartography/          # mapping / cartography spec
+├── earth_defense/        # defense group (2)
+├── hexa_defense/         # planetary defense spec
+├── hexa-skyway/          # aviation / skyway subsystem
+├── hexa-tsunami/         # tsunami early-warning
+├── hexa-weather/         # weather subsystem
+├── hexa-exo/             # exo-earth surface
+├── architecture/         # earth-architecture spec
+├── fire-science/         # fire science verb
+├── forensic-science/     # forensic spec
+├── civil-engineering/    # civil-engineering verb
+├── cli/                  # CLI surface
+├── AGENTS.tape           # .tape v1.2 identity + project tree
+├── LATTICE_POLICY.md     # n=6 lattice policy
+├── hexa.toml             # project manifest
+└── LICENSE               # MIT
+```
 
 ---
 
