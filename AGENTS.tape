@@ -46,7 +46,7 @@
 @I id001 := "hexa-earth" :: identity-claim [d=2026-05-14 active]
   kind = "HEXA-Earth family — earth science"
   brief = "HEXA-Earth family · earth science · climate · environment"
-  parent = "dancinlab/echoes"
+  parent = "dancinlab"
 
 @L l1 := "repo-layout" :: structure [active]
   .roadmap.hexa_earth -> "file"
