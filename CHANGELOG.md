@@ -20,7 +20,6 @@ All notable changes to **hexa-earth** are documented here. Format follows
 - MIT `LICENSE`.
 - Cross-link to sister repos (`hexa-bio`, `hexa-energy`).
 
-### Honest scope (raw#10 C3)
 
 - v1.0.0 is **spec-first** — working per-verb `.hexa` CLI implementations
   are TBD.

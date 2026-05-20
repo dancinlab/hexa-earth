@@ -35,7 +35,6 @@ hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa selftest
 hexa run $HEXA_EARTH_ROOT/cli/hexa-earth.hexa status
 ```
 
-## Honest caveats (raw#10 C3)
 
 1. **Spec-first**: verb dirs hold canonical specs from
    `canon@c0f1f570`; per-verb working `.hexa` implementations are

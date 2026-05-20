@@ -15,14 +15,10 @@
 //
 // Status: PLACEHOLDER v1.0.0 — spec-first packaging only. Per-verb working
 // .hexa implementations are TBD; this CLI currently routes to verb dir
-// listings (raw#10 honest C3 — no empirical sandbox at v1.0.0).
 //
 // Root resolution: $HEXA_EARTH_ROOT env, else inferred from $0 dirname.
 //
 // Constraints:
-//   raw#9   — hexa-only orchestration
-//   raw#15  — write-confined (audit log only)
-//   raw#10  — honest C3: spec-first, no working pipelines
 
 let VERSION = "1.0.0"
 
@@ -63,7 +59,6 @@ fn _count_present(verbs: [str]) -> int {
 
 fn _print_caveats() {
     println("")
-    println("--- caveats (raw#10 C3) ---")
     println("  1. v1.0.0 is SPEC-FIRST — verb dirs hold canonical specs extracted")
     println("     from canon@c0f1f570 (2026-05-06). Working .hexa CLI")
     println("     implementations per verb are TBD.")

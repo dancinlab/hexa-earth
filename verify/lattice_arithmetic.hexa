@@ -13,7 +13,6 @@
 //   σ(6)=12 → 12 verbs (sum of divisors of 6)
 // This identity is organising vocabulary only — it does NOT constrain
 // Earth-systems physics. IPCC AR6 / USGS / NOAA / KMA / SIPRI use their
-// own published values (raw#10 C3).
 //
 // This script: native-lattice arithmetic identities only. Pass iff
 // arithmetic holds. No external-domain claims.

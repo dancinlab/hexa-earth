@@ -101,7 +101,6 @@ fn main() {
 
     // 3. Honesty caveats: external Earth-system invariants must NOT be
     //    over-claimed against n=6 lattice (LATTICE_POLICY §1.3 rule 4).
-    //    Defense scope must remain peaceful / generic (raw#10 C3).
     let caveats = [
         ["lattice anchors are internal organising vocabulary only",  "organising vocabulary"],
         ["no claim that 12-verb follows external Earth invariant",    "external Earth-system invariant"],

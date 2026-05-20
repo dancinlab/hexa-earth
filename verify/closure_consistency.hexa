@@ -143,7 +143,6 @@ fn main() {
         bad = bad + 1
     }
 
-    // SPEC_FIRST verdict must be preserved (raw#10 C3 honest scope).
     let toml = root + "/hexa.toml"
     if _file_contains(toml, "SPEC_FIRST") {
         println("  [PASS] hexa.toml preserves SPEC_FIRST verdict")

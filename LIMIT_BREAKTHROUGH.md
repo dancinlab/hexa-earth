@@ -73,7 +73,6 @@ for the 12-verb / 4-group partitioning, not real limits.)
    without any new physics. Risk: zero (analysis-only); reputation
    upside high.
 
-## §5 Honest caveats (raw#10 C3)
 
 - L1–L3 are HARD physical laws; any verb output that violates radiative
   or thermodynamic balance is falsified, regardless of how elegant the
